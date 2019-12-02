@@ -24,4 +24,8 @@
       $router->post('login', 'AuthController@login');
       $router->post('refresh', 'AuthController@refresh');
     });
+    $router->group(['prefix' => 'me'], function () use ($router) {
+      $router->get('/', 'ProfileController@index');
+      $router->get('top-listens', 'ProfileController@top_listens');
+    });
   });
