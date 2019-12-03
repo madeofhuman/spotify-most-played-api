@@ -82,7 +82,7 @@
           return json_decode($res->getBody(), true);
         }
       } catch (GuzzleException $e) {
-        Log::info($e->getMessage());
+        Log::debug($e);
         abort($e->getCode(), $e->getMessage());
       }
     }
