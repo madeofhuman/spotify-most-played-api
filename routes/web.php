@@ -26,6 +26,6 @@
     });
     $router->group(['prefix' => 'me'], function () use ($router) {
       $router->get('/', 'ProfileController@index');
-      $router->get('top-listens', 'ProfileController@top_listens');
+      $router->get('top_listens', 'ProfileController@top_listens');
     });
   });
