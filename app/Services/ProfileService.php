@@ -47,9 +47,9 @@
       $medium_term = $this->fetch($this->url.'/top/artists?time_range=medium_term&limit=20');
       // $short_term = $this->fetch($this->url.'/top/artists?time_range=short_term&limit=20');
       return [
-        'long_term' => $long_term,
+        // 'long_term' => $long_term,
         'medium_term' => $medium_term,
-        'short_term' => $short_term,
+        // 'short_term' => $short_term,
       ];
     }
 
