@@ -55,9 +55,9 @@
 
     private function _get_top_track_listens()
     {
-      $long_term = $this->fetch($this->url.'/top/tracks?time_range=long_term&limit=20');
-      $medium_term = $this->fetch($this->url.'/top/tracks?time_range=medium_term&limit=20');
-      $short_term = $this->fetch($this->url.'/top/tracks?time_range=short_term&limit=20');
+      $long_term = $this->fetch($this->url.'/top/tracks?time_range=long_term&limit=50');
+      $medium_term = $this->fetch($this->url.'/top/tracks?time_range=medium_term&limit=50');
+      $short_term = $this->fetch($this->url.'/top/tracks?time_range=short_term&limit=50');
       return [
         'long_term' => $long_term,
         'medium_term' => $medium_term,
